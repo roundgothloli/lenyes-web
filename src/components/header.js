@@ -1,32 +1,20 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { AppBar, Button, Toolbar, Typography } from '@material-ui/core'
 
 const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+  <div className="header">
+    <AppBar color="secondary">
+      <Toolbar>
+        <Typography variant="h6" color="inherit">Lenyes</Typography>
+        <Button color="inherit">HOME</Button>
+        <Button color="inherit">ABOUT</Button>
+        <Button color="inherit">WORKS</Button>
+        <Button color="inherit">ORIGINAL MUSIC</Button>
+        <Button color="inherit">ARRANGE MUSIC</Button>
+        <Button color="inherit">LINK</Button>
+      </Toolbar>
+    </AppBar>
   </div>
 )
 
